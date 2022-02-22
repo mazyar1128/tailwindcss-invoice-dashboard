@@ -1,0 +1,41 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+    
+    
+
+}
+
+@layer utilities{
+    .invoice-table-row{
+        @apply px-3 md:px-10;
+    }
+    .invoice-table-row div:first-child{
+       @apply basis-1/12 shrink-0  hidden md:block ;
+    }
+    .invoice-table-row div:nth-child(2){
+        @apply basis-3/12 shrink-0 ;
+     } 
+     .invoice-table-row div:nth-child(3){
+        @apply basis-2/12 shrink-0  ;
+     }
+     .invoice-table-row div:nth-child(4){
+        @apply basis-2/12 shrink-0 ;
+     }
+     .invoice-table-row div:nth-child(5){
+        @apply flex-1 sm:flex-none sm:basis-2/12 shrink-0 ;
+     }
+     .invoice-table-row div:nth-child(6){
+        @apply flex-1 mx-auto  hidden sm:block ;
+     }
+     
+
+}

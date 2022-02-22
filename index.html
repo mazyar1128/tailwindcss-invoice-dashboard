@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Mazyar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <title>Invoice Management Dashboard</title>
+</head>
+
+<body class="font-montserrat ">
+    <div class="flex min-h-screen 2xl:max-w-7xl 2xl:mx-auto 2xl:border-x-2 2xl:border-indigo-50 ">
+        <!-- Sidebar -->
+        <aside class="bg-white w-1/5 py-10 pl-10  min-w-min   border-r border-indigo-900/20 hidden md:block ">
+            <div class=" font-bold text-2xl">Lozeq</div>
+
+            <!-- Menu -->
+            <div class="mt-12 flex flex-col space-y-7 text-gray-500 font-medium">
+
+
+                <a class=" flex items-center space-x-2 py-1  group hover:border-r-2 hover:border-r-indigo-700 hover:font-semibold " href="#">
+                    <svg class="h-5 w-5 group-hover:stroke-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+                        
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a class=" flex items-center space-x-2 py-1  group hover:border-r-2 hover:border-r-indigo-700 hover:font-semibold " href="#">
+                    <svg class="h-5 w-5 group-hover:stroke-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                        <span>Transactions</span>
+                    </svg></a>
+                <a class=" flex items-center space-x-2 py-1  font-semibold  border-r-2 border-r-indigo-700 pr-20 " href="#">
+                    <svg class="h-5 w-5 stroke-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        
+                    </svg>
+                    <span>Invoices</span>
+                </a>
+                <a class=" flex items-center space-x-2 py-1  group hover:border-r-2 hover:border-r-indigo-700 hover:font-semibold " href="#">
+                    <svg class="h-5 w-5 group-hover:stroke-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"></path>
+                        
+                    </svg>
+                    <span>Expenses</span>
+                </a>
+                <a class=" flex items-center space-x-2 py-1  group hover:border-r-2 hover:border-r-indigo-700 hover:font-semibold " href="#">
+                    <svg class="h-5 w-5 group-hover:stroke-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+                    </svg>
+                    <span>Banking</span>
+                </a>
+                <a class=" flex items-center space-x-2 py-1  group hover:border-r-2 hover:border-r-indigo-700 hover:font-semibold " href="#">
+                    <svg class="h-5 w-5 group-hover:stroke-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        
+                    </svg>
+                    <span>Cards</span>
+                </a>
+                <a class=" flex items-center space-x-2 py-1  group hover:border-r-2 hover:border-r-indigo-700 hover:font-semibold " href="#">
+                    <svg class="h-5 w-5 group-hover:stroke-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+
+
+            </div><!-- /Menu -->
+        </aside><!-- /Sidebar -->
+
+        <main class="bg-indigo-50/60 w-full py-10 px-3 sm:px-10">
+
+            <!-- Nav -->
+            <nav class="text-lg flex items-center justify-between content-center ">
+                <div class=" font-semibold text-xl text-gray-800 flex space-x-4 items-center">
+                    <a href="#">
+                        <span class="md:hidden">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+                            </svg>
+
+                        </span>
+                    </a>
+                    <span>Invoices</span>
+                </div>
+
+                <div class="flex space-x-5 md:space-x-10 text-gray-500 items-center content-center text-base ">
+                    <a class="flex items-center space-x-3 px-4 py-2 rounded-md  hover:bg-indigo-100" href="#">
+                        <span>
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </span>
+                        <span class="hidden sm:block">Preferences</span>
+                    </a>
+                    <a class="px-4 py-2 bg-indigo-100 rounded-md flex items-center space-x-2 text-indigo-500 hover:bg-indigo-200" href="#">
+                        <svg class="h-5 w-5 fill-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
+                        </svg>
+                        <div><span class="hidden sm:inline-block">Create</span> New</div>
+                    </a>
+                    <a class href="#">
+                        <img class="rounded-full w-10 h-10 border-2 border-indigo-200 hover:border-indigo-300" src="images/avatar.jpg" alt srcset>
+                    </a>
+                </div>
+            </nav> <!-- /Nav -->
+
+            <!-- Filters Section -->
+            <section>
+                <div class="bg-rose-100/70 mt-12  rounded-xl px-5 sm:px-10  pt-8 pb-4 relative xl:bg-[url('../images/invoice.png')] bg-no-repeat bg-right bg-contain ">
+                    <div class="text-rose-400 font-semibold text-lg">All Invoices</div>
+
+
+                    <div class="mt-6 grid grid-cols-2 gap-y-6  gap-x-6 md:flex md:space-x-6 md:gap-x-0 ">
+                        <!-- <div class="mt-6 grid grid-cols-4 max-w-max gap-x-6"> -->
+
+                        <!-- <div class="flex flex-col w-40 text-gray-700 text-sm space-y-2">
+                            <label for="start-date">Begin Date</label>
+                            <input id="startdate" type="date" value="2019-11-01"
+                                class="bg-indigo-800/80 text-white  px-4 py-3 rounded-lg ">
+                        </div> -->
+
+
+                        <div class="flex flex-col  md:w-40  text-gray-600 text-sm space-y-2 font-semibold">
+                            <label for="client">Begin Date</label>
+                            <div class="inline-flex relative">
+                                <input class="bg-indigo-800/80 text-white tracking-wider pl-4 pr-10 py-3 rounded-lg appearance-none w-full outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300" id="client" name="client" type="text" value="2019/02/28">
+
+                                <span class="absolute top-0 right-0 m-3 pointer-events-none text-white">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:w-40  text-gray-600 text-sm space-y-2 font-semibold">
+                            <label for="client">End Date</label>
+                            <div class="inline-flex relative">
+                                <input class="bg-indigo-800/50 text-white tracking-wider pl-4 pr-10 py-3 rounded-lg appearance-none w-full outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300" id="client" name="client" type="text" value="2019/12/09">
+
+                                <span class="absolute top-0 right-0 m-3 pointer-events-none text-white">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="flex flex-col md:w-40  text-gray-600 text-sm space-y-2 font-semibold">
+                            <label for="client">Status</label>
+                            <div class="inline-flex relative">
+                                <select class="bg-rose-400 text-white  px-4 py-3 rounded-lg appearance-none w-full outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300" id="client" name="client">
+                                    <option value="Any">Any</option>
+                                </select>
+                                <span class="absolute top-0 right-0 m-3 pointer-events-none text-white">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:w-40 text-gray-600 text-sm space-y-2 font-semibold">
+                            <label for="client">Client</label>
+                            <div class="inline-flex relative">
+                                <select class="bg-blue-600/70  text-white  px-4 py-3 rounded-lg appearance-none w-full outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300" id="client" name="client">
+                                    <option value="Any">Any</option>
+                                </select>
+                                <span class="absolute top-0 right-0 m-3 pointer-events-none text-white">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-5 text-gray-500 text-sm ">
+                        * This data has been shown according to your given information
+                    </div>
+                </div>
+
+            </section> <!-- /Filters Section -->
+
+
+            <!-- Invoice List Table -->
+            <section class="">
+                <!-- Table Header -->
+                <div class="invoice-table-row bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3 text-sm font-semibold  text-gray-600">
+                    <div class="text-left">Invoice</div>
+                    <div class="text-left">Client name</div>
+                    <div class="text-center">Date</div>
+                    <div class="text-center ">Due date</div>
+                    <div class="text-right">Total</div>
+                    <div class="flex-1  text-center">Status</div>
+                </div><!-- /Table Header -->
+
+
+                <!-- Table Body -->
+                <div class="bg-white mt-5 rounded-xl text-sm  text-gray-500 divide-y divide-indigo-50 overflow-x-auto  shadow">
+
+                    <div class="invoice-table-row flex items-center gap-x-3 px-10 py-4">
+                        <div class="text-left ">12</div>
+                        <div class="text-left">John Doe</div>
+                        <div class="text-center">2019/11/20</div>
+                        <div class="text-center">2019/12/20</div>
+                        <div class="text-right">$10.00</div>
+                        <div class="text-center ">
+                            <span class="px-4 py-1 rounded-lg bg-rose-400  text-white">Draft</span>
+                        </div>
+                    </div>
+
+                    <div class="invoice-table-row flex items-center gap-x-3 px-10 py-4">
+                        <div class="text-left">13</div>
+                        <div class="text-left">Thomas Bride</div>
+                        <div class="text-center">2019/11/20</div>
+                        <div class="text-center">2019/12/20</div>
+                        <div class="text-right">$670.00</div>
+                        <div class="text-center ">
+                            <span class="px-4 py-1 rounded-lg bg-indigo-400  text-white">Paid</span>
+                        </div>
+                    </div>
+
+                    <div class="invoice-table-row flex items-center gap-x-3 px-10 py-4">
+                        <div class="text-left">14</div>
+                        <div class="text-left">Ellen Bean</div>
+                        <div class="text-center">2019/11/20</div>
+                        <div class="text-center">2019/12/20</div>
+                        <div class="text-right">$1032.00</div>
+                        <div class="text-center ">
+                            <span class="px-4 py-1 rounded-lg bg-rose-400  text-white">Draft</span>
+                        </div>
+                    </div>
+
+                    <div class="invoice-table-row flex items-center gap-x-3 px-10 py-4 bg-indigo-50">
+                        <div class="text-left">15</div>
+                        <div class="text-left">Jack Sanders</div>
+                        <div class="text-center">2020/11/20</div>
+                        <div class="text-center">2020/12/20</div>
+                        <div class="text-right">$590.00</div>
+                        <div class="text-center ">
+                            <span class="px-4 py-1 rounded-lg bg-indigo-400  text-white">Paid</span>
+                        </div>
+                    </div>
+
+                    <div class="invoice-table-row flex items-center gap-x-3 px-10 py-4">
+                        <div class="text-left">16</div>
+                        <div class="text-left">Leslie Ive</div>
+                        <div class="text-center">2020/11/20</div>
+                        <div class="text-center">2020/12/20</div>
+                        <div class="text-right">$230.00</div>
+                        <div class="text-center ">
+                            <span class="px-4 py-1 rounded-lg bg-rose-400  text-white">Draft</span>
+                        </div>
+                    </div>
+
+
+                </div><!-- /Table Body -->
+            </section>
+            <!-- /Invoice List Table -->
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
