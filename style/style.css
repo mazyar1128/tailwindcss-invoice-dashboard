@@ -1011,6 +1011,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.invoice-table-row:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+}
+
+.invoice-table-header:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .invoice-table-row div:first-child{
   display: none;
   flex-shrink: 0;

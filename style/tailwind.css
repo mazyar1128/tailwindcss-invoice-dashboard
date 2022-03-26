@@ -16,7 +16,13 @@
 
 @layer utilities{
     .invoice-table-row{
-        @apply px-3 md:px-10;
+        @apply px-3 md:px-10 ;
+    } 
+    .invoice-table-row{
+        @apply hover:bg-indigo-50 ;
+    }
+    .invoice-table-header{
+       @apply hover:bg-white;
     }
     .invoice-table-row div:first-child{
        @apply basis-1/12 shrink-0  hidden md:block ;
